@@ -1,0 +1,123 @@
+!!index array str
+ "NNDMA"
+!entry.NNDMA.unit.atoms table  str name  str type  int typex  int resx  int flags  int seq  int elmnt  dbl chg
+ "C" "c3" 0 1 131072 1 6 -0.169100
+ "C1" "c" 0 1 131072 2 6 0.659100
+ "O" "o" 0 1 131072 3 8 -0.609100
+ "N" "n" 0 1 131072 4 7 -0.484800
+ "C2" "c3" 0 1 131072 5 6 0.081800
+ "C3" "c3" 0 1 131072 6 6 0.081800
+ "H" "hc" 0 1 131072 7 1 0.065033
+ "H1" "hc" 0 1 131072 8 1 0.065033
+ "H2" "hc" 0 1 131072 9 1 0.065033
+ "H3" "h1" 0 1 131072 10 1 0.041200
+ "H4" "h1" 0 1 131072 11 1 0.041200
+ "H5" "h1" 0 1 131072 12 1 0.041200
+ "H6" "h1" 0 1 131072 13 1 0.041200
+ "H7" "h1" 0 1 131072 14 1 0.041200
+ "H8" "h1" 0 1 131072 15 1 0.041200
+!entry.NNDMA.unit.atomspertinfo table  str pname  str ptype  int ptypex  int pelmnt  dbl pchg
+ "C" "c3" 0 -1 0.0
+ "C1" "c" 0 -1 0.0
+ "O" "o" 0 -1 0.0
+ "N" "n" 0 -1 0.0
+ "C2" "c3" 0 -1 0.0
+ "C3" "c3" 0 -1 0.0
+ "H" "hc" 0 -1 0.0
+ "H1" "hc" 0 -1 0.0
+ "H2" "hc" 0 -1 0.0
+ "H3" "h1" 0 -1 0.0
+ "H4" "h1" 0 -1 0.0
+ "H5" "h1" 0 -1 0.0
+ "H6" "h1" 0 -1 0.0
+ "H7" "h1" 0 -1 0.0
+ "H8" "h1" 0 -1 0.0
+!entry.NNDMA.unit.boundbox array dbl
+ -1.000000
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+!entry.NNDMA.unit.childsequence single int
+ 2
+!entry.NNDMA.unit.connect array int
+ 0
+ 0
+!entry.NNDMA.unit.connectivity table  int atom1x  int atom2x  int flags
+ 1 2 1
+ 1 7 1
+ 1 8 1
+ 1 9 1
+ 2 3 2
+ 2 4 1
+ 4 5 1
+ 4 6 1
+ 5 10 1
+ 5 11 1
+ 5 12 1
+ 6 13 1
+ 6 14 1
+ 6 15 1
+!entry.NNDMA.unit.hierarchy table  str abovetype  int abovex  str belowtype  int belowx
+ "U" 0 "R" 1
+ "R" 1 "A" 1
+ "R" 1 "A" 2
+ "R" 1 "A" 3
+ "R" 1 "A" 4
+ "R" 1 "A" 5
+ "R" 1 "A" 6
+ "R" 1 "A" 7
+ "R" 1 "A" 8
+ "R" 1 "A" 9
+ "R" 1 "A" 10
+ "R" 1 "A" 11
+ "R" 1 "A" 12
+ "R" 1 "A" 13
+ "R" 1 "A" 14
+ "R" 1 "A" 15
+!entry.NNDMA.unit.name single str
+ "*****"
+!entry.NNDMA.unit.positions table  dbl x  dbl y  dbl z
+ 1.126000 0.013000 -0.061000
+ 2.634000 0.004000 -0.063000
+ 3.239000 -0.951000 -0.550000
+ 3.279000 1.099000 0.497000
+ 2.610000 2.250000 1.085000
+ 4.734000 1.128000 0.511000
+ 0.760000 -0.906000 -0.530000
+ 0.750000 0.861000 -0.639000
+ 0.748000 0.042000 0.964000
+ 1.523000 2.176000 1.047000
+ 2.916000 3.149000 0.542000
+ 2.916000 2.336000 2.132000
+ 5.173000 0.236000 0.056000
+ 5.076000 1.195000 1.548000
+ 5.076000 2.008000 -0.042000
+!entry.NNDMA.unit.residueconnect table  int c1x  int c2x  int c3x  int c4x  int c5x  int c6x
+ 0 0 0 0 0 0
+!entry.NNDMA.unit.residues table  str name  int seq  int childseq  int startatomx  str restype  int imagingx
+ "UNL" 1 16 1 "?" 0
+!entry.NNDMA.unit.residuesPdbSequenceNumber array int
+ 0
+!entry.NNDMA.unit.solventcap array dbl
+ -1.000000
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+!entry.NNDMA.unit.velocities table  dbl x  dbl y  dbl z
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0

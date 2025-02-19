@@ -1,0 +1,7 @@
+source leaprc.gaff
+ETA = loadmol2 ETA_gaff.mol2
+loadamberparams ETA.frcmod
+check ETA
+saveoff ETA ETA.lib
+saveamberparm ETA ETA.prmtop ETA.inpcrd
+quit

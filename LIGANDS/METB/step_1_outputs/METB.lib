@@ -1,0 +1,142 @@
+!!index array str
+ "METB"
+!entry.METB.unit.atoms table  str name  str type  int typex  int resx  int flags  int seq  int elmnt  dbl chg
+ "C" "c3" 0 1 131072 1 6 0.127700
+ "O" "os" 0 1 131072 2 8 -0.439900
+ "C1" "c" 0 1 131072 3 6 0.644700
+ "O1" "o" 0 1 131072 4 8 -0.544000
+ "C2" "ca" 0 1 131072 5 6 -0.135600
+ "C3" "ca" 0 1 131072 6 6 -0.071500
+ "C4" "ca" 0 1 131072 7 6 -0.148000
+ "C5" "ca" 0 1 131072 8 6 -0.096000
+ "C6" "ca" 0 1 131072 9 6 -0.148000
+ "C7" "ca" 0 1 131072 10 6 -0.071500
+ "H" "h1" 0 1 131072 11 1 0.051700
+ "H1" "h1" 0 1 131072 12 1 0.051700
+ "H2" "h1" 0 1 131072 13 1 0.051700
+ "H3" "ha" 0 1 131072 14 1 0.156000
+ "H4" "ha" 0 1 131072 15 1 0.139500
+ "H5" "ha" 0 1 131072 16 1 0.136000
+ "H6" "ha" 0 1 131072 17 1 0.139500
+ "H7" "ha" 0 1 131072 18 1 0.156000
+!entry.METB.unit.atomspertinfo table  str pname  str ptype  int ptypex  int pelmnt  dbl pchg
+ "C" "c3" 0 -1 0.0
+ "O" "os" 0 -1 0.0
+ "C1" "c" 0 -1 0.0
+ "O1" "o" 0 -1 0.0
+ "C2" "ca" 0 -1 0.0
+ "C3" "ca" 0 -1 0.0
+ "C4" "ca" 0 -1 0.0
+ "C5" "ca" 0 -1 0.0
+ "C6" "ca" 0 -1 0.0
+ "C7" "ca" 0 -1 0.0
+ "H" "h1" 0 -1 0.0
+ "H1" "h1" 0 -1 0.0
+ "H2" "h1" 0 -1 0.0
+ "H3" "ha" 0 -1 0.0
+ "H4" "ha" 0 -1 0.0
+ "H5" "ha" 0 -1 0.0
+ "H6" "ha" 0 -1 0.0
+ "H7" "ha" 0 -1 0.0
+!entry.METB.unit.boundbox array dbl
+ -1.000000
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+!entry.METB.unit.childsequence single int
+ 2
+!entry.METB.unit.connect array int
+ 0
+ 0
+!entry.METB.unit.connectivity table  int atom1x  int atom2x  int flags
+ 1 2 1
+ 1 11 1
+ 1 12 1
+ 1 13 1
+ 2 3 1
+ 3 4 2
+ 3 5 1
+ 5 6 4
+ 5 10 4
+ 6 7 4
+ 6 14 1
+ 7 8 4
+ 7 15 1
+ 8 9 4
+ 8 16 1
+ 9 10 4
+ 9 17 1
+ 10 18 1
+!entry.METB.unit.hierarchy table  str abovetype  int abovex  str belowtype  int belowx
+ "U" 0 "R" 1
+ "R" 1 "A" 1
+ "R" 1 "A" 2
+ "R" 1 "A" 3
+ "R" 1 "A" 4
+ "R" 1 "A" 5
+ "R" 1 "A" 6
+ "R" 1 "A" 7
+ "R" 1 "A" 8
+ "R" 1 "A" 9
+ "R" 1 "A" 10
+ "R" 1 "A" 11
+ "R" 1 "A" 12
+ "R" 1 "A" 13
+ "R" 1 "A" 14
+ "R" 1 "A" 15
+ "R" 1 "A" 16
+ "R" 1 "A" 17
+ "R" 1 "A" 18
+!entry.METB.unit.name single str
+ "*****"
+!entry.METB.unit.positions table  dbl x  dbl y  dbl z
+ 1.139000 -1.385000 0.271000
+ 2.566000 -1.375000 0.297000
+ 3.135000 -0.963000 -0.866000
+ 2.537000 -0.621000 -1.877000
+ 4.609000 -1.043000 -0.770000
+ 5.282000 -0.928000 0.453000
+ 6.674000 -1.017000 0.493000
+ 7.396000 -1.224000 -0.683000
+ 6.730000 -1.331000 -1.905000
+ 5.339000 -1.234000 -1.950000
+ 0.784000 -1.624000 1.278000
+ 0.777000 -2.155000 -0.417000
+ 0.749000 -0.401000 -0.007000
+ 4.731000 -0.758000 1.375000
+ 7.198000 -0.925000 1.442000
+ 8.480000 -1.300000 -0.649000
+ 7.294000 -1.487000 -2.820000
+ 4.824000 -1.315000 -2.906000
+!entry.METB.unit.residueconnect table  int c1x  int c2x  int c3x  int c4x  int c5x  int c6x
+ 0 0 0 0 0 0
+!entry.METB.unit.residues table  str name  int seq  int childseq  int startatomx  str restype  int imagingx
+ "UNL" 1 19 1 "?" 0
+!entry.METB.unit.residuesPdbSequenceNumber array int
+ 0
+!entry.METB.unit.solventcap array dbl
+ -1.000000
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+!entry.METB.unit.velocities table  dbl x  dbl y  dbl z
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0
+ 0.0 0.0 0.0

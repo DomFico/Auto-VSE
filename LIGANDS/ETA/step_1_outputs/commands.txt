@@ -1,0 +1,48 @@
+Commands used for ligand ETA:
+SMILES: CCOC(=O)C
+obabel -:"CCOC(=O)C" -o mol2 -O ETA.mol2 --gen3d --best
+antechamber -i ETA.mol2 -fi mol2 -o ETA_gaff.mol2 -fo mol2 -c bcc -s 2
+parmchk2 -i ETA_gaff.mol2 -f mol2 -o ETA.frcmod
+Created tleap.in file.
+tleap -f tleap.in
+sed -i 's/UNL/ETA/g' ETA.prmtop
+acpype -p ETA.prmtop -x ETA.inpcrd
+mv ETA.amb2gmx/ETA_GMX.gro .
+mv ETA.amb2gmx/ETA_GMX.top .
+
+Detailed Command List:
+1. Parse SMILES:
+   Command: head -n 1 smiles.txt
+   Function: Extract the SMILES string from the smiles.txt file.
+
+2. Convert SMILES to mol2:
+   Command: obabel -:"CCOC(=O)C" -o mol2 -O ETA.mol2 --gen3d --best
+   Function: Generate a mol2 file with optimal geometry using a systematic rotamer search.
+
+3. Assign GAFF Atom Types:
+   Command: antechamber -i ETA.mol2 -fi mol2 -o ETA_gaff.mol2 -fo mol2 -c bcc -s 2
+   Function: Assign GAFF atom types to the molecule (currently supports only neutral compounds).
+
+4. Generate Force Field Parameters:
+   Command: parmchk2 -i ETA_gaff.mol2 -f mol2 -o ETA.frcmod
+   Function: Create a force field parameter file (frcmod) using GAFF parameters.
+
+5. Generate Topology Files using tleap:
+   Command: tleap -f tleap.in
+   Function: Run tleap with a custom input file to generate AMBER topology files (.prmtop, .inpcrd, .lib).
+
+6. Modify Residue Name in Topology:
+   Command: sed -i 's/UNL/ETA/g' ETA.prmtop
+   Function: Replace the default residue name "UNL" with the ligand's directory name in the prmtop file.
+
+7. Convert AMBER Files to GROMACS Format:
+   Command: acpype -p ETA.prmtop -x ETA.inpcrd
+   Function: Convert AMBER topology and coordinate files to GROMACS format (.gro, .top).
+
+8. Retrieve Final Files:
+   Command: mv ETA.amb2gmx/ETA_GMX.gro .  and  mv ETA.amb2gmx/ETA_GMX.top .
+   Function: Extract the final GROMACS .gro and .top files from the acepype output directory.
+
+9. Organize Intermediate Files:
+   Command: Move all non-final files (except smiles.txt and probe.ndx) into the "step_1_outputs" folder.
+   Function: Clean up the working directory by relocating intermediate files while preserving smiles.txt and probe.ndx.

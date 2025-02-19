@@ -1,0 +1,7 @@
+source leaprc.gaff
+E4TPB = loadmol2 E4TPB_gaff.mol2
+loadamberparams E4TPB.frcmod
+check E4TPB
+saveoff E4TPB E4TPB.lib
+saveamberparm E4TPB E4TPB.prmtop E4TPB.inpcrd
+quit

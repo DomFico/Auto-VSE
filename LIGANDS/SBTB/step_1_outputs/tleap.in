@@ -1,0 +1,7 @@
+source leaprc.gaff
+SBTB = loadmol2 SBTB_gaff.mol2
+loadamberparams SBTB.frcmod
+check SBTB
+saveoff SBTB SBTB.lib
+saveamberparm SBTB SBTB.prmtop SBTB.inpcrd
+quit

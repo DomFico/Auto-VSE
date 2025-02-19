@@ -1,0 +1,48 @@
+Commands used for ligand SBTB:
+SMILES: CCCCSC(=O)C1=CC=CC=C1
+obabel -:"CCCCSC(=O)C1=CC=CC=C1" -o mol2 -O SBTB.mol2 --gen3d --best
+antechamber -i SBTB.mol2 -fi mol2 -o SBTB_gaff.mol2 -fo mol2 -c bcc -s 2
+parmchk2 -i SBTB_gaff.mol2 -f mol2 -o SBTB.frcmod
+Created tleap.in file.
+tleap -f tleap.in
+sed -i 's/UNL/SBTB/g' SBTB.prmtop
+acpype -p SBTB.prmtop -x SBTB.inpcrd
+mv SBTB.amb2gmx/SBTB_GMX.gro .
+mv SBTB.amb2gmx/SBTB_GMX.top .
+
+Detailed Command List:
+1. Parse SMILES:
+   Command: head -n 1 smiles.txt
+   Function: Extract the SMILES string from the smiles.txt file.
+
+2. Convert SMILES to mol2:
+   Command: obabel -:"CCCCSC(=O)C1=CC=CC=C1" -o mol2 -O SBTB.mol2 --gen3d --best
+   Function: Generate a mol2 file with optimal geometry using a systematic rotamer search.
+
+3. Assign GAFF Atom Types:
+   Command: antechamber -i SBTB.mol2 -fi mol2 -o SBTB_gaff.mol2 -fo mol2 -c bcc -s 2
+   Function: Assign GAFF atom types to the molecule (currently supports only neutral compounds).
+
+4. Generate Force Field Parameters:
+   Command: parmchk2 -i SBTB_gaff.mol2 -f mol2 -o SBTB.frcmod
+   Function: Create a force field parameter file (frcmod) using GAFF parameters.
+
+5. Generate Topology Files using tleap:
+   Command: tleap -f tleap.in
+   Function: Run tleap with a custom input file to generate AMBER topology files (.prmtop, .inpcrd, .lib).
+
+6. Modify Residue Name in Topology:
+   Command: sed -i 's/UNL/SBTB/g' SBTB.prmtop
+   Function: Replace the default residue name "UNL" with the ligand's directory name in the prmtop file.
+
+7. Convert AMBER Files to GROMACS Format:
+   Command: acpype -p SBTB.prmtop -x SBTB.inpcrd
+   Function: Convert AMBER topology and coordinate files to GROMACS format (.gro, .top).
+
+8. Retrieve Final Files:
+   Command: mv SBTB.amb2gmx/SBTB_GMX.gro .  and  mv SBTB.amb2gmx/SBTB_GMX.top .
+   Function: Extract the final GROMACS .gro and .top files from the acepype output directory.
+
+9. Organize Intermediate Files:
+   Command: Move all non-final files (except smiles.txt and probe.ndx) into the "step_1_outputs" folder.
+   Function: Clean up the working directory by relocating intermediate files while preserving smiles.txt and probe.ndx.

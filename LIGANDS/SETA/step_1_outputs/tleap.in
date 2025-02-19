@@ -1,0 +1,7 @@
+source leaprc.gaff
+SETA = loadmol2 SETA_gaff.mol2
+loadamberparams SETA.frcmod
+check SETA
+saveoff SETA SETA.lib
+saveamberparm SETA SETA.prmtop SETA.inpcrd
+quit

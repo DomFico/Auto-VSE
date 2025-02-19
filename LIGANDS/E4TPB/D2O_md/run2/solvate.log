@@ -1,0 +1,55 @@
+               :-) GROMACS - gmx solvate, 2024.4-conda_forge (-:
+
+Executable:   /home/dom/anaconda3/envs/amber/bin.AVX2_256/gmx
+Data prefix:  /home/dom/anaconda3/envs/amber
+Working dir:  /home/dom/Desktop/Research/VSE/carbonyl_probe/LIGANDS/E4TPB/D2O_md/run2
+Command line:
+  gmx solvate -cp E4TPB.gro -cs spc216.gro -o E4TPB_D2O.gro -p temp_topol.top
+
+Reading solute configuration
+Reading solvent configuration
+
+Initialising inter-atomic distances...
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+NOTE: From version 5.0 gmx solvate uses the Van der Waals radii
+from the source below. This means the results may be different
+compared to previous GROMACS versions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. 68 (1964) pp. 441-451
+-------- -------- --- Thank You --- -------- --------
+
+Generating solvent configuration
+Will generate new solvent configuration of 3x3x3 boxes
+Solvent box contains 16200 atoms in 5400 residues
+Removed 2889 solvent atoms due to solvent-solvent overlap
+Removed 39 solvent atoms due to solute-solvent overlap
+Sorting configuration
+Found 1 molecule type:
+    SOL (   3 atoms):  4424 residues
+Generated solvent containing 13272 atoms in 4424 residues
+Writing generated configuration to E4TPB_D2O.gro
+
+Output configuration contains 13299 atoms in 4425 residues
+Volume                 :     135.815 (nm^3)
+Density                :     976.876 (g/l)
+Number of solvent molecules:   4424   
+
+Processing topology
+
+Back Off! I just backed up temp_topol.top to ./#temp_topol.top.1#
+
+GROMACS reminds you: "When I got my first job as a programmer there were quite a number of women doing programming because there was no computer science education and people were hired from many different fields if it seemed like they could do the work. It was better then, probably, in terms of proportions, not necessarily in women being paid as much as men and so forth, but definitely, there were women around." (Barbara Liskov)
+
+Adding line for 4424 solvent molecules with resname (SOL) to topology file (temp_topol.top)

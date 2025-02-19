@@ -1,0 +1,7 @@
+source leaprc.gaff
+ET3A = loadmol2 ET3A_gaff.mol2
+loadamberparams ET3A.frcmod
+check ET3A
+saveoff ET3A ET3A.lib
+saveamberparm ET3A ET3A.prmtop ET3A.inpcrd
+quit

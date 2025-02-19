@@ -1,0 +1,7 @@
+source leaprc.gaff
+NNDMA = loadmol2 NNDMA_gaff.mol2
+loadamberparams NNDMA.frcmod
+check NNDMA
+saveoff NNDMA NNDMA.lib
+saveamberparm NNDMA NNDMA.prmtop NNDMA.inpcrd
+quit

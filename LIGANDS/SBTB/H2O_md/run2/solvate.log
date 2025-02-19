@@ -1,0 +1,55 @@
+               :-) GROMACS - gmx solvate, 2024.4-conda_forge (-:
+
+Executable:   /home/dom/anaconda3/envs/amber/bin.AVX2_256/gmx
+Data prefix:  /home/dom/anaconda3/envs/amber
+Working dir:  /home/dom/Desktop/Research/VSE/carbonyl_probe/LIGANDS/SBTB/H2O_md/run2
+Command line:
+  gmx solvate -cp SBTB.gro -cs spc216.gro -o SBTB_H2O.gro -p temp_topol.top
+
+Reading solute configuration
+Reading solvent configuration
+
+Initialising inter-atomic distances...
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+NOTE: From version 5.0 gmx solvate uses the Van der Waals radii
+from the source below. This means the results may be different
+compared to previous GROMACS versions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. 68 (1964) pp. 441-451
+-------- -------- --- Thank You --- -------- --------
+
+Generating solvent configuration
+Will generate new solvent configuration of 3x3x3 boxes
+Solvent box contains 16983 atoms in 5661 residues
+Removed 3129 solvent atoms due to solvent-solvent overlap
+Removed 21 solvent atoms due to solute-solvent overlap
+Sorting configuration
+Found 1 molecule type:
+    SOL (   3 atoms):  4611 residues
+Generated solvent containing 13833 atoms in 4611 residues
+Writing generated configuration to SBTB_H2O.gro
+
+Output configuration contains 13860 atoms in 4612 residues
+Volume                 :     141.584 (nm^3)
+Density                :     976.539 (g/l)
+Number of solvent molecules:   4611   
+
+Processing topology
+
+Back Off! I just backed up temp_topol.top to ./#temp_topol.top.1#
+
+GROMACS reminds you: "I spent a lot of money on booze, birds and fast cars. The rest I just squandered." (George Best)
+
+Adding line for 4611 solvent molecules with resname (SOL) to topology file (temp_topol.top)

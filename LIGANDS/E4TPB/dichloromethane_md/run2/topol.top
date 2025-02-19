@@ -1,0 +1,48 @@
+; Topology generated from /home/ghahremanpour/Liquids/MOLECULES/OEP/dichloromethane/dichloromethane-3-oep.log.gz
+; Charge method used bcc
+; MOL_GMX.top created by acpype (Rev: 0) on Wed Feb 14 22:35:00 2018
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333
+
+[ atomtypes ]
+;name   bond_type     mass     charge   ptype   sigma         epsilon       Amb
+ cl       cl          0.00000  0.00000   A     3.47094e-01   1.10876e+00 ; 1.95  0.2650
+ c3       c3          0.00000  0.00000   A     3.39967e-01   4.57730e-01 ; 1.91  0.1094
+ h2       h2          0.00000  0.00000   A     2.29317e-01   6.56888e-02 ; 1.29  0.0157
+
+[ moleculetype ]
+;name            nrexcl
+ MOL              3
+
+[ atoms ]
+;   nr  type  resi  res  atom  cgnr     charge      mass       ; qtot   bond_type
+     1   cl     1   MOL   CL1    1    -0.150900     35.45000 ; qtot -0.151
+     2   c3     1   MOL    C1    2     0.122400     12.01000 ; qtot -0.029
+     3   h2     1   MOL    H1    3     0.089700      1.00800 ; qtot 0.061
+     4   h2     1   MOL    H2    4     0.089700      1.00800 ; qtot 0.151
+     5   cl     1   MOL   CL2    5    -0.150900     35.45000 ; qtot -0.000
+
+[ bonds ]
+;   ai     aj funct   r             k
+     1      2   1    1.8045e-01    2.2284e+05 ;    CL1 - C1    
+     2      3   1    1.0961e-01    2.7757e+05 ;     C1 - H1    
+     2      4   1    1.0961e-01    2.7757e+05 ;     C1 - H2    
+     2      5   1    1.8045e-01    2.2284e+05 ;     C1 - CL2   
+
+[ angles ]
+;   ai     aj     ak    funct   theta         cth
+     1      2      3      1    1.0699e+02    3.3489e+02 ;    CL1 - C1     - H1    
+     1      2      4      1    1.0699e+02    3.3489e+02 ;    CL1 - C1     - H2    
+     1      2      5      1    1.0933e+02    4.5263e+02 ;    CL1 - C1     - CL2   
+     3      2      4      1    1.1020e+02    3.2602e+02 ;     H1 - C1     - H2    
+     3      2      5      1    1.0699e+02    3.3489e+02 ;     H1 - C1     - CL2   
+     4      2      5      1    1.0699e+02    3.3489e+02 ;     H2 - C1     - CL2   
+
+[ system ]
+ MOL
+
+[ molecules ]
+; Compound        nmols
+ MOL              1     

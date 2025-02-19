@@ -1,0 +1,7 @@
+source leaprc.gaff
+METB = loadmol2 METB_gaff.mol2
+loadamberparams METB.frcmod
+check METB
+saveoff METB METB.lib
+saveamberparm METB METB.prmtop METB.inpcrd
+quit

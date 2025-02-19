@@ -1,0 +1,28 @@
+[ moleculetype ]
+;name            nrexcl
+ MOL              3
+
+[ atoms ]
+; nr type resi res atom 0.0 charge mass ; qtot bond_type
+1 cl 1 MOL CL1 1 0.0 35.45000 ; qtot -0.151
+2 c3 1 MOL C1 2 0.0 12.01000 ; qtot -0.029
+3 h2 1 MOL H1 3 0.0 1.00800 ; qtot 0.061
+4 h2 1 MOL H2 4 0.0 1.00800 ; qtot 0.151
+5 cl 1 MOL CL2 5 0.0 35.45000 ; qtot -0.000
+
+[ bonds ]
+;   ai     aj funct   r             k
+     1      2   1    1.8045e-01    2.2284e+05 ;    CL1 - C1    
+     2      3   1    1.0961e-01    2.7757e+05 ;     C1 - H1    
+     2      4   1    1.0961e-01    2.7757e+05 ;     C1 - H2    
+     2      5   1    1.8045e-01    2.2284e+05 ;     C1 - CL2   
+
+[ angles ]
+;   ai     aj     ak    funct   theta         cth
+     1      2      3      1    1.0699e+02    3.3489e+02 ;    CL1 - C1     - H1    
+     1      2      4      1    1.0699e+02    3.3489e+02 ;    CL1 - C1     - H2    
+     1      2      5      1    1.0933e+02    4.5263e+02 ;    CL1 - C1     - CL2   
+     3      2      4      1    1.1020e+02    3.2602e+02 ;     H1 - C1     - H2    
+     3      2      5      1    1.0699e+02    3.3489e+02 ;     H1 - C1     - CL2   
+     4      2      5      1    1.0699e+02    3.3489e+02 ;     H2 - C1     - CL2   
+
