@@ -43,7 +43,7 @@ The MD workflow is split into two main scripts:
 Below is an outline of the directory hierarchy expected by the scripts:
 
 ```
-carbonyl_probe/
+Auto-VSE/
 ├── ANALYSIS_SCRIPTS/
 │   └── (... your custom analysis scripts ...)
 ├── LIGANDS/
