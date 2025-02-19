@@ -1,4 +1,4 @@
-# README: MD Setup for Carbonyl Probe Simulations
+# MD Setup for Carbonyl Probe Simulations
 
 ## Introduction
 
