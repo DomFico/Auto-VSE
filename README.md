@@ -1,5 +1,3 @@
-Here’s the corrected markdown that will render properly on GitHub:
-
 ```markdown
 # README: MD Setup for Carbonyl Probe Simulations
 
