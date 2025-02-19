@@ -43,7 +43,6 @@ The MD workflow is split into two main scripts:
 
 Below is an outline of the directory hierarchy expected by the scripts:
 
-```
 carbonyl_probe/
 ├── ANALYSIS_SCRIPTS/
 │   └── (... your custom analysis scripts ...)
@@ -76,7 +75,6 @@ carbonyl_probe/
 │       └── topol.top
 ├── step_1.sh
 └── step_2.sh
-```
 
 **Important files and directories**:
 
