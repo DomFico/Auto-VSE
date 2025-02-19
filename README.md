@@ -1,4 +1,3 @@
-```markdown
 # README: MD Setup for Carbonyl Probe Simulations
 
 ## Introduction
@@ -171,4 +170,3 @@ For D2O simulations included here, we simply increase the hydrogen mass to 2.014
 Feel free to open an issue or contact the authors if you encounter any problems or if you have feedback on making these scripts more robust.
 
 Have Fun :)
-```
