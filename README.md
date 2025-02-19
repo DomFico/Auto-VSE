@@ -1,3 +1,5 @@
+Here’s the corrected markdown that will render properly on GitHub:
+
 ```markdown
 # README: MD Setup for Carbonyl Probe Simulations
 
@@ -83,7 +85,7 @@ carbonyl_probe/
 - **`LIGANDS/`**  
   Each ligand must be placed in its own subdirectory. The minimal requirements inside each ligand folder are:
   - `smiles.txt` containing the SMILES string of the ligand (line 1).  
-  - `probe.ndx` containing an index group file for the carbonyl probe atoms (e.g., for post-MD analysis).
+  - `probe.ndx` containing an index group file for the carbonyl probe atoms (e.g., for post-MD analysis).  
   - Any outputs from `step_1.sh` and `step_2.sh` will be placed here (e.g., `*_GMX.gro`, `*_GMX.top`, `*_md/` folders, etc.).
 
 - **`MD_PARAMS/`**  
@@ -135,7 +137,7 @@ For D2O simulations included here, we simply increase the hydrogen mass to 2.014
    - Ensure that each subfolder has either `spc216.gro` + `tip3p.itp` (for H2O/D2O) or `conf.gro` + `topol.top` (for non-water).  
    - You may drag and drop additional solvent parameter files from [Virtual Chemistry](https://virtualchemistry.org/ff.php#refs) if needed.  
 4. **Check MD Parameters**:  
-   - Ensure that `MD_PARAMS/` contains `.mdp` files: `min.mdp`, `nvt.mdp`, `npt.mdp`, and `md.mdp`. 
+   - Ensure that `MD_PARAMS/` contains `.mdp` files: `min.mdp`, `nvt.mdp`, `npt.mdp`, and `md.mdp`.  
 5. **Run Step 1**:  
    - From the `carbonyl_probe/` directory, execute:  
      ```bash
