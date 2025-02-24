@@ -2,7 +2,7 @@
 
 Executable:   /home/dom/anaconda3/envs/amber/bin.AVX2_256/gmx
 Data prefix:  /home/dom/anaconda3/envs/amber
-Working dir:  /home/dom/Desktop/Research/VSE/carbonyl_probe/LIGANDS/NNDMA/H2O_md/run1
+Working dir:  /home/dom/Desktop/Research/VSE/Auto-VSE/LIGANDS/NNDMA/H2O_md/run1
 Command line:
   gmx solvate -cp NNDMA.gro -cs spc216.gro -o NNDMA_H2O.gro -p temp_topol.top
 
@@ -50,6 +50,6 @@ Processing topology
 
 Back Off! I just backed up temp_topol.top to ./#temp_topol.top.1#
 
-GROMACS reminds you: "There are three types of people: Those who see, those who see when they are shown, and those who do not see." (Leonardo da Vinci)
+GROMACS reminds you: "She Says She Can't Go Home Without a Chaperone" (E. Costello)
 
 Adding line for 2995 solvent molecules with resname (SOL) to topology file (temp_topol.top)

@@ -2,7 +2,7 @@
 
 Executable:   /home/dom/anaconda3/envs/amber/bin.AVX2_256/gmx
 Data prefix:  /home/dom/anaconda3/envs/amber
-Working dir:  /home/dom/Desktop/Research/VSE/carbonyl_probe/LIGANDS/E4TPB/D2O_md/run2
+Working dir:  /home/dom/Desktop/Research/VSE/Auto-VSE/LIGANDS/E4TPB/D2O_md/run2
 Command line:
   gmx solvate -cp E4TPB.gro -cs spc216.gro -o E4TPB_D2O.gro -p temp_topol.top
 
@@ -50,6 +50,6 @@ Processing topology
 
 Back Off! I just backed up temp_topol.top to ./#temp_topol.top.1#
 
-GROMACS reminds you: "When I got my first job as a programmer there were quite a number of women doing programming because there was no computer science education and people were hired from many different fields if it seemed like they could do the work. It was better then, probably, in terms of proportions, not necessarily in women being paid as much as men and so forth, but definitely, there were women around." (Barbara Liskov)
+GROMACS reminds you: "Rub It Right Across Your Eyes" (F. Zappa)
 
 Adding line for 4424 solvent molecules with resname (SOL) to topology file (temp_topol.top)

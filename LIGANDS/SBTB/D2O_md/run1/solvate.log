@@ -2,7 +2,7 @@
 
 Executable:   /home/dom/anaconda3/envs/amber/bin.AVX2_256/gmx
 Data prefix:  /home/dom/anaconda3/envs/amber
-Working dir:  /home/dom/Desktop/Research/VSE/carbonyl_probe/LIGANDS/SBTB/D2O_md/run1
+Working dir:  /home/dom/Desktop/Research/VSE/Auto-VSE/LIGANDS/SBTB/D2O_md/run1
 Command line:
   gmx solvate -cp SBTB.gro -cs spc216.gro -o SBTB_D2O.gro -p temp_topol.top
 
@@ -50,6 +50,6 @@ Processing topology
 
 Back Off! I just backed up temp_topol.top to ./#temp_topol.top.1#
 
-GROMACS reminds you: "Science... never solves a problem without creating ten more." (George Bernard Shaw)
+GROMACS reminds you: "I don't know how many of you have ever met Dijkstra, but you probably know that arrogance in computer science is measured in nano-Dijkstras." (Alan Kay)
 
 Adding line for 4611 solvent molecules with resname (SOL) to topology file (temp_topol.top)

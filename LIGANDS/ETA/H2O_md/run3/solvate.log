@@ -2,7 +2,7 @@
 
 Executable:   /home/dom/anaconda3/envs/amber/bin.AVX2_256/gmx
 Data prefix:  /home/dom/anaconda3/envs/amber
-Working dir:  /home/dom/Desktop/Research/VSE/carbonyl_probe/LIGANDS/ETA/H2O_md/run3
+Working dir:  /home/dom/Desktop/Research/VSE/Auto-VSE/LIGANDS/ETA/H2O_md/run3
 Command line:
   gmx solvate -cp ETA.gro -cs spc216.gro -o ETA_H2O.gro -p temp_topol.top
 
@@ -50,6 +50,6 @@ Processing topology
 
 Back Off! I just backed up temp_topol.top to ./#temp_topol.top.1#
 
-GROMACS reminds you: "Good Music Saves your Soul" (Lemmy)
+GROMACS reminds you: "I've basically become a vegetarian since the only meat I'm eating is from animals I've killed myself" (Mark Zuckerberg)
 
 Adding line for 3206 solvent molecules with resname (SOL) to topology file (temp_topol.top)

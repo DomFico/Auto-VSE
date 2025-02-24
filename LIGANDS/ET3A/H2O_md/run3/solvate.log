@@ -2,7 +2,7 @@
 
 Executable:   /home/dom/anaconda3/envs/amber/bin.AVX2_256/gmx
 Data prefix:  /home/dom/anaconda3/envs/amber
-Working dir:  /home/dom/Desktop/Research/VSE/carbonyl_probe/LIGANDS/ET3A/H2O_md/run3
+Working dir:  /home/dom/Desktop/Research/VSE/Auto-VSE/LIGANDS/ET3A/H2O_md/run3
 Command line:
   gmx solvate -cp ET3A.gro -cs spc216.gro -o ET3A_H2O.gro -p temp_topol.top
 
@@ -50,6 +50,6 @@ Processing topology
 
 Back Off! I just backed up temp_topol.top to ./#temp_topol.top.1#
 
-GROMACS reminds you: "An intellectual is someone who has found something more interesting than sex." (Edgar Wallace)
+GROMACS reminds you: "I try to identify myself with the atoms... I ask what I would do If I were a carbon atom or a sodium atom." (Linus Pauling)
 
 Adding line for 3682 solvent molecules with resname (SOL) to topology file (temp_topol.top)

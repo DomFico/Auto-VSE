@@ -2,7 +2,7 @@
 
 Executable:   /home/dom/anaconda3/envs/amber/bin.AVX2_256/gmx
 Data prefix:  /home/dom/anaconda3/envs/amber
-Working dir:  /home/dom/Desktop/Research/VSE/carbonyl_probe/LIGANDS/METB/H2O_md/run3
+Working dir:  /home/dom/Desktop/Research/VSE/Auto-VSE/LIGANDS/METB/H2O_md/run3
 Command line:
   gmx solvate -cp METB.gro -cs spc216.gro -o METB_H2O.gro -p temp_topol.top
 
@@ -50,6 +50,6 @@ Processing topology
 
 Back Off! I just backed up temp_topol.top to ./#temp_topol.top.1#
 
-GROMACS reminds you: "Martin [Karplus] had a green laser, Arieh [Warshel] had a red laser, I have a *blue* laser" (Michael Levitt, Nobel lecture 2013)
+GROMACS reminds you: "When using an abacus, a human can achieve about 0.1 flops/watt. Super-computers achieve about 2 gigaflops/watt." (John Linford)
 
 Adding line for 3612 solvent molecules with resname (SOL) to topology file (temp_topol.top)

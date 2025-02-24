@@ -1,0 +1,44 @@
+ETA
+    D2O: 1703.8±0.3
+    trichloromethane: 1731.6±0.3
+    dichloromethane: 1733.5±0.1
+    dimethyl-sulfoxide: 1732.7±0.1
+    tetrahydrofuran: 1741.5±0.1
+    dibutyl-ether: 1746.2±0.1
+    hexane: 1750.2±0.1
+
+METB
+    D2O: 1704.6±0.9
+    trichloromethane: 1720.2±0.1
+    dichloromethane: 1720.6±0.1
+    dimethyl-sulfoxide: 1719.7±0.1
+    tetrahydrofuran: 1727.5±0.4
+    dibutyl-ether: 1731.4±0.4
+    hexane: 1734.4±0.1
+
+SETA
+    D2O: 1663.3±0.7
+    trichloromethane: 1684.9±0.2 
+    dichloromethane: 1686.8±0.1
+    dimethyl-sulfoxide: 1686.2±0.1
+    tetrahydrofuran: 1693.9±0.1 
+    dibutyl-ether: 1697.8±0.1
+    hexane: 1701.0±0.1
+
+SBTB
+    D2O: N/A
+    trichloromethane: 1659.2±0.1
+    dichloromethane: 1660.4±0.1
+    dimethyl-sulfoxide: 1659.6±0.1
+    tetrahydrofuran: 1666.3±0.1
+    dibutyl-ether: 1670.2±0.1 
+    hexane: 1672.6±0.1
+
+NNDMA
+    D2O: 1607.4±0.1
+    trichloromethane: 1633.0±0.2
+    dichloromethane: 1639.5±0.7 
+    dimethyl-sulfoxide: 1639.8±0.2 
+    tetrahydrofuran: 1661.6±0.6 
+    dibutyl-ether: 1668.7±0.6 
+    hexane: 1674.1±0.1

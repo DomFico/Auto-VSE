@@ -2,7 +2,7 @@
 
 Executable:   /home/dom/anaconda3/envs/amber/bin.AVX2_256/gmx
 Data prefix:  /home/dom/anaconda3/envs/amber
-Working dir:  /home/dom/Desktop/Research/VSE/carbonyl_probe/LIGANDS/E4TPB/H2O_md/run3
+Working dir:  /home/dom/Desktop/Research/VSE/Auto-VSE/LIGANDS/E4TPB/H2O_md/run3
 Command line:
   gmx solvate -cp E4TPB.gro -cs spc216.gro -o E4TPB_H2O.gro -p temp_topol.top
 
@@ -50,6 +50,6 @@ Processing topology
 
 Back Off! I just backed up temp_topol.top to ./#temp_topol.top.1#
 
-GROMACS reminds you: "We're having an information explosion, among others, and it's certainly obvious that information is of no use unless it's available." (Sister Mary Kenneth Keller)
+GROMACS reminds you: "You can get into a habit of thought in which you enjoy making fun of all those other people who don't see things as clearly as you do. We have to guard carefully against it." (Carl Sagan)
 
 Adding line for 4424 solvent molecules with resname (SOL) to topology file (temp_topol.top)

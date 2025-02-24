@@ -2,7 +2,7 @@
 
 Executable:   /home/dom/anaconda3/envs/amber/bin.AVX2_256/gmx
 Data prefix:  /home/dom/anaconda3/envs/amber
-Working dir:  /home/dom/Desktop/Research/VSE/carbonyl_probe/LIGANDS/SETA/H2O_md/run2
+Working dir:  /home/dom/Desktop/Research/VSE/Auto-VSE/LIGANDS/SETA/H2O_md/run2
 Command line:
   gmx solvate -cp SETA.gro -cs spc216.gro -o SETA_H2O.gro -p temp_topol.top
 
@@ -50,6 +50,6 @@ Processing topology
 
 Back Off! I just backed up temp_topol.top to ./#temp_topol.top.1#
 
-GROMACS reminds you: "We must have perseverance and above all confidence in ourselves. We must believe that we are gifted for something and that this thing must be attained." (Marie Curie)
+GROMACS reminds you: "If mathematical analysis should ever hold a prominent place in chemistry - an aberration which is happily almost impossible - it would occasion a rapid and widespread degeneration of that science." (Aguste Comte, 1830)
 
 Adding line for 3327 solvent molecules with resname (SOL) to topology file (temp_topol.top)
