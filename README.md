@@ -1,5 +1,7 @@
 # MD Setup for Carbonyl Probe Simulations
 
+![Electric Field vs Frequency](electric_field_vs_frequency.png)
+
 ## Introduction
 
 This repository provides a suite of scripts to automate the preparation of ligand topologies, conversion to GROMACS format, and the setup and analysis of Molecular Dynamics (MD) simulations in multiple solvents. The overall methodology is inspired by:
