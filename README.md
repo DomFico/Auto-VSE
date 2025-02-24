@@ -153,7 +153,9 @@ For D2O simulations included here, we simply increase the hydrogen mass to 2.014
 ## How to Run
 
 1. **Clone or Download** this repository into a working directory.
-   - git clone https://github.com/DomFico/Auto-VSE.git  
+     ```bash
+     git clone https://github.com/DomFico/Auto-VSE.git
+     ```  
 2. **Place Your Ligands**:  
    - Create subfolders in `LIGANDS/`, one for each ligand.  
    - Put `smiles.txt` (with exactly one SMILES on the first line) in each ligand folder.  
