@@ -152,7 +152,8 @@ For D2O simulations included here, we simply increase the hydrogen mass to 2.014
 
 ## How to Run
 
-1. **Clone or Download** this repository into a working directory (e.g., `carbonyl_probe/`).  
+1. **Clone or Download** this repository into a working directory.
+   - git clone https://github.com/DomFico/Auto-VSE.git  
 2. **Place Your Ligands**:  
    - Create subfolders in `LIGANDS/`, one for each ligand.  
    - Put `smiles.txt` (with exactly one SMILES on the first line) in each ligand folder.  
@@ -164,7 +165,7 @@ For D2O simulations included here, we simply increase the hydrogen mass to 2.014
 4. **Check MD Parameters**:  
    - Ensure that `MD_PARAMS/` contains `.mdp` files: `min.mdp`, `nvt.mdp`, `npt.mdp`, and `md.mdp`.  
 5. **Run Step 1**:  
-   - From the `carbonyl_probe/` directory, execute:  
+   - From the `AUTO-VSE/` directory, execute:  
      ```bash
      ./step_1.sh
      ```  
