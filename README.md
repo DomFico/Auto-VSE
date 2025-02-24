@@ -37,7 +37,7 @@ The MD setup and analysis workflow is divided into several sequential steps:
    - Sets up triplicate MD simulation replicates (`run1/`, `run2/`, `run3/`) within each ligand’s solvent-specific MD folder, copying analysis scripts and creating an HPC submission script (`run_md.sh`).
 
 3. **Job Submission (Step 3)**  
-   **`step_3_modified.sh`**  
+   **`step_3.sh`**  
    - Iterates through each ligand’s MD run directories, ensures that the submission script (`run_md.sh`) is executable, changes to the appropriate directory, and submits the jobs via `sbatch`.  
    - This script ensures the working directory is correctly set so that all input files are found by GROMACS.
 
