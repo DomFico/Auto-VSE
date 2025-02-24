@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # MD Setup for Carbonyl Probe Simulations
-=======
-# README: MD Setup for Carbonyl Probe Simulations
->>>>>>> d323832 (updates)
 
 ## Introduction
 
@@ -103,7 +99,7 @@ Auto-VSE/
 ├── freq_data.txt
 ├── step_1.sh
 ├── step_2.sh
-├── step_3_modified.sh
+├── step_3_.sh
 ├── step_4.sh
 ├── aggregate_results.py
 └── plot_field_vs_frequency.py
@@ -111,7 +107,6 @@ Auto-VSE/
 
 **Key Files:**
 
-<<<<<<< HEAD
 - **`LIGANDS/`**  
   Each ligand must be placed in its own subdirectory. The minimal requirements inside each ligand folder are:
   - `smiles.txt` containing the SMILES string of the ligand (line 1).  
@@ -152,20 +147,11 @@ Auto-VSE/
 ## Special Note on D2O
 
 For D2O simulations included here, we simply increase the hydrogen mass to 2.014 within the water model. This approach is a rough approximation and not strictly correct, but it may provide a first pass at simulating heavy water in these simulations.
-=======
-- **`step_1.sh`**: Converts SMILES to force-field parameterized topologies and prepares GROMACS input files.
-- **`step_2.sh`**: Sets up triplicate MD simulations per ligand/solvent, prepares topologies (including zero-charge versions), and creates HPC submission scripts.
-- **`step_3.sh`**: Iterates through simulation run directories, ensures executable permissions, and submits jobs via SLURM.
-- **`step_4.sh`**: Loads the scipy-stack, executes `calc_fields.py` and `time_series.py` in each run directory, saving analysis output to `results.txt`.
-- **`aggregate_results.py`**: Aggregates key vibrational frequency metrics from `results.txt` files into `aggregated_results.csv`.
-- **`plot_field_vs_frequency.py`**: Merges electric field data with vibrational frequency data, fits regression lines per ligand, prints the regression equations, and creates a publication-quality plot (`electric_field_vs_frequency.png`).
->>>>>>> d323832 (updates)
 
 ---
 
 ## How to Run
 
-<<<<<<< HEAD
 1. **Clone or Download** this repository into a working directory (e.g., `carbonyl_probe/`).  
 2. **Place Your Ligands**:  
    - Create subfolders in `LIGANDS/`, one for each ligand.  
@@ -179,24 +165,6 @@ For D2O simulations included here, we simply increase the hydrogen mass to 2.014
    - Ensure that `MD_PARAMS/` contains `.mdp` files: `min.mdp`, `nvt.mdp`, `npt.mdp`, and `md.mdp`.  
 5. **Run Step 1**:  
    - From the `carbonyl_probe/` directory, execute:  
-=======
-1. **Clone/Download** the repository into your working directory
-  - git clone https://github.com/DomFico/Auto-VSE.git
-
-2. **Prepare Ligands**:  
-   - Create subdirectories under `LIGANDS/` for each ligand.  
-   - Place `smiles.txt` (with one SMILES string on the first line) and `probe.ndx` in each ligand folder.
-
-3. **Prepare Solvents**:  
-   - Under `SOLVENTS/`, create a subdirectory for each solvent (e.g., H2O, D2O, trichloromethane, etc.).  
-   - Place `spc216.gro`/`tip3p.itp` for water (or D2O) and `conf.gro`/`topol.top` for organic solvents in the corresponding folders.
-
-4. **MD Parameters**:  
-   - Ensure `MD_PARAMS/` contains the required `.mdp` files: `min.mdp`, `nvt.mdp`, `npt.mdp`, and `md.mdp`.
-
-5. **Run the Workflow**:  
-   - **Step 1**:  
->>>>>>> d323832 (updates)
      ```bash
      ./step_1.sh
      ```  
@@ -245,14 +213,4 @@ For D2O simulations included here, we simply increase the hydrogen mass to 2.014
 - **HPC Job Submission**:  
   The SLURM directives in `run_md.sh` and `step_3.sh` may need adaptation to your cluster's specifications.
 
-<<<<<<< HEAD
 Have Fun :)
-=======
-- **Analysis Customization**:  
-  Additional analysis scripts placed in `ANALYSIS_SCRIPTS/` are automatically copied into each run folder during Step 2.
-
-For any issues or feedback, please open an issue or contact the maintainers.
-
-Happy Simulating :)
-```
->>>>>>> d323832 (updates)
