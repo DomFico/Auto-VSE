@@ -125,7 +125,7 @@ Auto-VSE/
   The scripts use these to solvate the ligand and build the final topologies.  
   If you need additional solvent parameter files, you can obtain them from [Virtual Chemistry](https://virtualchemistry.org/ff.php#refs) and place them here.
 
-- **`ANALYSIS_SCRIPTS/`** (Optional but recommended)  
+- **`ANALYSIS_SCRIPTS/`**  
   Place any custom analysis scripts here. They are automatically copied into every `run*` folder created by `step_2.sh`.
 
 ---
