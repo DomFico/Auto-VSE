@@ -55,7 +55,7 @@ The MD setup and analysis workflow is divided into several sequential steps:
    - **`plot_field_vs_frequency.py`**  
      - Reads `aggregated_results.csv` and frequency data from `freq_data.txt`.  
      - Merges the average electric field data with vibrational frequencies (provided per ligand and solvent).  
-     - Creates a publication-quality scatter plot where the x-axis is the average solvent electric field (in MV/cm) and the y-axis is the C=O frequency (in cm⁻¹).  
+     - Creates a scatter plot where the x-axis is the average solvent electric field (in MV/cm) and the y-axis is the C=O frequency (in cm⁻¹).  
      - For each ligand, a solid black regression line (extended across the full x-range) is fitted and printed to the terminal in the format:  
        ```
        v̅C═O<ligand> = <slope>|F⃗solv| + <intercept> (R2 = <r²>)
@@ -101,7 +101,7 @@ Auto-VSE/
 ├── freq_data.txt
 ├── step_1.sh
 ├── step_2.sh
-├── step_3_.sh
+├── step_3.sh
 ├── step_4.sh
 ├── aggregate_results.py
 └── plot_field_vs_frequency.py
@@ -127,22 +127,6 @@ Auto-VSE/
 
 - **`ANALYSIS_SCRIPTS/`** (Optional but recommended)  
   Place any custom analysis scripts here. They are automatically copied into every `run*` folder created by `step_2.sh`.
-
-- **`step_1.sh`**  
-  Processes each ligand:  
-  1. Reads `smiles.txt` → generates a `.mol2` file (via `obabel`).  
-  2. Assigns GAFF atom types (via `antechamber` + `parmchk2`).  
-  3. Creates AMBER topologies (`tleap`) → converts to GROMACS (`acpype`).  
-  4. Cleans up intermediate files into `step_1_outputs/`.
-
-- **`step_2.sh`**  
-  Uses the final `.gro` and `.top` from Step 1 to:  
-  1. Create a simulation box around each ligand.  
-  2. Insert solvent molecules or water boxes.  
-  3. Prepare zero-charge (0q) topologies for vibrational Stark analysis.  
-  4. Split the simulations into three replicates (`run1`, `run2`, `run3`).  
-  5. Copy the analysis scripts from `ANALYSIS_SCRIPTS/`.  
-  6. Generate a submission script (`run_md.sh`) for HPC job execution.
 
 ---
 
@@ -211,9 +195,6 @@ For D2O simulations included here, we simply increase the hydrogen mass to 2.014
 ---
 
 ## Final Notes
-
-- **D2O Simulations**:  
-  For D2O, the hydrogen mass is increased to 2.014 in the water model as an approximation.
 
 - **HPC Job Submission**:  
   The SLURM directives in `run_md.sh` and `step_3.sh` may need adaptation to your cluster's specifications.
